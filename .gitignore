@@ -1,0 +1,18 @@
+# Node dependencies.
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Platform specified files.
+.DS_Store
+
+# Code editor setting files.
+.atom/
+.idea/
+.fleet/
+*.iml
+*.ipr
+*.iws
+*.sln
+*.swp

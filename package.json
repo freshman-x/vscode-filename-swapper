@@ -1,0 +1,36 @@
+{
+  "name": "swapFilenames",
+  "description": "swapFilenames",
+  "version": "0.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "validate",
+        "title": "Validate VSCode Hello"
+      },
+      {
+        "command": "swapFilenames",
+        "title": "Swap Selected Files' Names"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "swapFilenames",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder == false && resourceCount == 2"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  }
+}
