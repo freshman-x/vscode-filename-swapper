@@ -1,7 +1,7 @@
 {
   "name": "swapFilenames",
   "description": "swapFilenames",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -13,16 +13,16 @@
         "title": "Validate VSCode Hello"
       },
       {
-        "command": "swapFilenames",
-        "title": "Swap Selected Files' Names"
+        "command": "swapFilenamesBetter",
+        "title": "交换选中文件名（优化版）"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "swapFilenames",
-          "group": "navigation",
-          "when": "explorerResourceIsFolder == false && resourceCount == 2"
+          "command": "swapFilenamesBetter",
+          "when": "explorerResourceIsFolder == false && listMultiSelection",
+          "group": "navigation"
         }
       ]
     }
