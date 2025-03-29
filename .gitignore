@@ -16,3 +16,4 @@ yarn.lock
 *.iws
 *.sln
 *.swp
+*.vsix
